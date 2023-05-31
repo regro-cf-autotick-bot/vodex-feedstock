@@ -1,5 +1,5 @@
 {% set name = "vodex" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vodex-{{ version }}.tar.gz
-  sha256: 8da97ef0734b63acbeeb3d8892bfda4440380fbd63af03773dce3c0c525f030d
+  sha256: 88539e469759722a07cde8da8892c6888a8093009c66cec637e41cd15fa1643a
 
 build:
   noarch: python
