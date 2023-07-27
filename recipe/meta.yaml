@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm
   run:
     - numpy
+    - pandas
     - python >=3.8
     - tifffile
     - tqdm
@@ -35,12 +36,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/LemonJust/vodex
+  home: https://pypi.org/project/vodex
   summary: |
     VoDEx : Volumetric Data and Experiment Manager. Allows to load
     volumetric data based on experimental conditions.
   license: BSD-3-Clause
   license_file: LICENSE.md
+  dev_url: https://github.com/LemonJust/vodex
 
 extra:
   recipe-maintainers:
