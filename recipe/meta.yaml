@@ -1,5 +1,5 @@
 {% set name = "vodex" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vodex-{{ version }}.tar.gz
-  sha256: 8da97ef0734b63acbeeb3d8892bfda4440380fbd63af03773dce3c0c525f030d
+  sha256: 21d8bcceaba4cb580b4f9cb80f73a98120c397144eb000fa2c83495c8c37f9c4
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm
   run:
     - numpy
+    - pandas
     - python >=3.8
     - tifffile
     - tqdm
@@ -35,12 +36,13 @@ test:
     - pip
 
 about:
-  home: https://github.com/LemonJust/vodex
+  home: https://pypi.org/project/vodex
   summary: |
     VoDEx : Volumetric Data and Experiment Manager. Allows to load
     volumetric data based on experimental conditions.
   license: BSD-3-Clause
   license_file: LICENSE.md
+  dev_url: https://github.com/LemonJust/vodex
 
 extra:
   recipe-maintainers:
