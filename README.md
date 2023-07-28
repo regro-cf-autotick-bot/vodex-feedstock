@@ -3,13 +3,15 @@ About vodex-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vodex-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/LemonJust/vodex
+Home: https://pypi.org/project/vodex
 
 Package license: BSD-3-Clause
 
 Summary: VoDEx : Volumetric Data and Experiment Manager. Allows to load
 volumetric data based on experimental conditions.
 
+
+Development: https://github.com/LemonJust/vodex
 
 Current build status
 ====================
