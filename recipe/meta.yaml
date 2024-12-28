@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vodex-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vodex-{{ version }}.tar.gz
   sha256: 771a67d2e894371522362e72a04f31b529c24c7c87d2442f8715411b204db267
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - numpy
     - pandas
-    - python >=3.8
+    - python >={{ python_min }}
     - tifffile
     - tqdm
 
@@ -34,6 +34,7 @@ test:
     # - pip check  # Fails due to pathlib
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/vodex
